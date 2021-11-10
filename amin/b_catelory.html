@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=iedge">
+        <meta name="viewport" content="whidth=device-whidth, initial scale=1.0 ">
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stype.css">
+        <link rel="stylesheet" href="header.css">
+       
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <title>Danh mục sản phẩm</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa fa-user"></i>
+            <p>AMIN</p>
+        </div>
+       
+        <div class="others">
+            <li> <input type="text"> <i class="fa fa-search"> </i> </li>
+            <li><img src="../image/amin1.jpg" alt=""></li>
+            <li> <a href="">Huỳnh Thị Ngọc Duyên</a></li>
+        </div>
+    </header>
+    <section class="amin-contenr">
+        <div class="amin-contenr-left">
+            <p><i class="fa fa-home"></i> USER</p>
+                <ul>
+                    <li class="list"> <a href="#"><i class="fa fa-angle-right"></i>
+                        TAI KHOẢN</a>
+                    </li>
+                    <li class="list"> <a href="#"><i class="fa fa-angle-right"></i>
+                        GIỎ HÀNG</a>
+                    </li>
+                </ul>
+            <p><i class="fa fa-plus-square"></i> DATABASE </p>
+                <ul>
+                    <li class="list"> <a href="#"><i class="fa fa-angle-right"></i>
+                        Danh mục</a>
+                        <ul>
+                            <li><a href="">Danh mục</a></li>
+                            <li><a href="">Danh sách Danh mục</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"> <a href="#"><i class="fa fa-angle-right"></i>
+                        Loại sản phẩm</a>
+                        <ul>
+                            <li><a href="">Thêm loại sản phẩm</a></li>
+                            <li><a href="">Danh sách loại sản phẩm</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"> <a href="#"><i class="fa fa-angle-right"></i>
+                        Sản phẩm</a>
+                        <ul>
+                            <li><a href="">Thêm sản phẩm</a></li>
+                            <li><a href="">Danh sách sản phẩm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+        <div class="amin-contenr-right">
+            <div class="amin-contenr-right-cartegory-add">
+                <h1>Thêm danh mục</h1>
+                <form action="" method="POST">
+                    <input type="text" placeholder="Nhập tên danh mục">
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+</body>
+<script>
+    const itemliderbar = document.querySelectorAll(".list")
+    itemliderbar.forEach(function(menu, index){
+    menu.addEventListener("click", function(){
+        menu.classList.toggle("block")
+    }) 
+    })
+</script>
+</html>
